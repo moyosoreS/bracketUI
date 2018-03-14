@@ -3,7 +3,8 @@ import renderIf from 'render-if';
 import {
   HashRouter,
   Route,
-  Link
+  Link,
+  Redirect,
 } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
@@ -28,15 +29,27 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
+      <div>
         <div>
         <Route path="/login" component={Login} />
+        </div>
+        <div>
         <Route path="/register" component={Register} />
+        </div>
+        <div>
 	{renderIf(this.state.loggedIn===true)(
         <Route path="/dashboard" component={Dashboard} /> )}
+        </div>
+        <div>
+        <Route path="/" component={Login} />
+        </div>
+       <div>
+        <Route path="/" component={Register} />
+        </div>
       </div>
       </HashRouter>
-
-
+	
+     
     );
   }
 }

@@ -11,7 +11,7 @@ class Final extends Component {
      
      console.log(e);}
 
-	constructor(props) {
+    constructor(props) {
     super(props);
     this.state = {
       current: 'current',
