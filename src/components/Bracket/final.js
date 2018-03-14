@@ -35,7 +35,7 @@ class Final extends Component {
 	<ul class="roundL round-5">
 		
 		
-	<li id="304" class="gameL game-topL winnerL"> <span>85</span></li>
+	<li id="304" class="gameL game-topL winnerL"> </li>
 		
 	</ul>			
 </main>
@@ -54,7 +54,7 @@ class Final extends Component {
 	<ul class="roundL round-5">
 		
 		
-	<li id="305" class="gameL game-topL winnerL"> <span>85</span></li>
+	<li id="305" class="gameL game-topL winnerL"> </li>
 		
 	</ul>
 </main>

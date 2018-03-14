@@ -127,114 +127,114 @@ render() {
 	console.log("DATA CONV: ", json_games["HomeTeam"]);
       return (
         <div>
-        <h1>2013 NCAA Tournament - Midwest Bracket</h1>
+        <h1>               2018 NCAA Tournament - East Bracket</h1>
 <main id="tournament" class="right">
   <ul class="roundR round-1">
     <li class="spacerR">&nbsp;</li>
     
-    <li id="0" class="gameR game-topR winnerR" onClick={(e) => this.handleClick1(home_store[24])}>{ home_store[24] } <span>79</span></li>
+    <li id="0" class="gameR game-topR winnerR" onClick={(e) => this.handleClick1(home_store[24])}>{ home_store[24] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="1" class="gameR game-bottomR " onClick={(e) => this.handleClick1(away_store[24])}>{ away_store[24] } <span>48</span></li>
+    <li id="1" class="gameR game-bottomR " onClick={(e) => this.handleClick1(away_store[24])}>{ away_store[24] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="2" class="gameR game-topR winnerR" onClick={(e) => this.handleClick2(home_store[25])}>{ home_store[25] } <span>84</span></li>
+    <li id="2" class="gameR game-topR winnerR" onClick={(e) => this.handleClick2(home_store[25])}>{ home_store[25] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="3" class="gameR game-bottomR " onClick={(e) => this.handleClick2(away_store[25])}>{ away_store[25] } <span>72</span></li>
+    <li id="3" class="gameR game-bottomR " onClick={(e) => this.handleClick2(away_store[25])}>{ away_store[25] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="4" class="gameR game-topR " onClick={(e) => this.handleClick3(home_store[26])}>{ home_store[26] } <span>55</span></li>
+    <li id="4" class="gameR game-topR " onClick={(e) => this.handleClick3(home_store[26])}>{ home_store[26] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="5" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick3(away_store[26])}>{ away_store[26] } <span>68</span></li>
+    <li id="5" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick3(away_store[26])}>{ away_store[26] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="6" class="gameR game-topR winnerR" onClick={(e) => this.handleClick4(home_store[27])}>{ home_store[27] } <span>64</span></li>
+    <li id="6" class="gameR game-topR winnerR" onClick={(e) => this.handleClick4(home_store[27])}>{ home_store[27] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="7" class="gameR game-bottomR " onClick={(e) => this.handleClick4(away_store[27])}>{ away_store[27] } <span>44</span></li>
+    <li id="7" class="gameR game-bottomR " onClick={(e) => this.handleClick4(away_store[27])}>{ away_store[27] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="8" class="gameR game-topR winnerR" onClick={(e) => this.handleClick5(home_store[28])}>{ home_store[28] } <span>54</span></li>
+    <li id="8" class="gameR game-topR winnerR" onClick={(e) => this.handleClick5(home_store[28])}>{ home_store[28] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="9" class="gameR game-bottomR " onClick={(e) => this.handleClick5(away_store[28])}>{ away_store[28] } <span>52</span></li>
+    <li id="9" class="gameR game-bottomR " onClick={(e) => this.handleClick5(away_store[28])}>{ away_store[28] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="10" class="gameR game-topR winnerR" onClick={(e) => this.handleClick6(home_store[29])}>{ home_store[29] } <span>65</span></li>
+    <li id="10" class="gameR game-topR winnerR" onClick={(e) => this.handleClick6(home_store[29])}>{ home_store[29] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="11" class="gameR game-bottomR " onClick={(e) => this.handleClick6(away_store[29])}>{ away_store[29] } <span>54</span></li>
+    <li id="11" class="gameR game-bottomR " onClick={(e) => this.handleClick6(away_store[29])}>{ away_store[29] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="12" class="gameR game-topR winnerR" onClick={(e) => this.handleClick7(home_store[30])}>{ home_store[30] } <span>67</span></li>
+    <li id="12" class="gameR game-topR winnerR" onClick={(e) => this.handleClick7(home_store[30])}>{ home_store[30] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="13" class="gameR game-bottomR " onClick={(e) => this.handleClick7(away_store[30])}>{ away_store[30] } <span>63</span></li>
+    <li id="13" class="gameR game-bottomR " onClick={(e) => this.handleClick7(away_store[30])}>{ away_store[30] } </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="14" class="gameR game-topR winnerR" onClick={(e) => this.handleClick8(home_store[31])}>{ home_store[31] } <span>73</span></li>
+    <li id="14" class="gameR game-topR winnerR" onClick={(e) => this.handleClick8(home_store[31])}>{ home_store[31] } </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="15" class="gameR game-bottomR " onClick={(e) => this.handleClick8(away_store[31])}>{ away_store[31] } <span>61</span></li>
+    <li id="15" class="gameR game-bottomR " onClick={(e) => this.handleClick8(away_store[31])}>{ away_store[31] } </li>
 
     <li class="spacerR">&nbsp;</li>
   </ul>
   <ul class="roundR round-2">
     <li class="spacerR">&nbsp;</li>
     
-    <li id="64" class="gameR game-topR winnerR" onClick={(e) => this.handleClick9(document.getElementById("64").innerHTML)}> <span>82</span></li>
+    <li id="64" class="gameR game-topR winnerR" onClick={(e) => this.handleClick9(document.getElementById("64").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="65" class="gameR game-bottomR " onClick={(e) => this.handleClick9(document.getElementById("65").innerHTML)}> <span>56</span></li>
+    <li id="65" class="gameR game-bottomR " onClick={(e) => this.handleClick9(document.getElementById("65").innerHTML)}> </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="66" class="gameR game-topR winnerR" onClick={(e) => this.handleClick10(document.getElementById("66").innerHTML)}> <span>74</span></li>
+    <li id="66" class="gameR game-topR winnerR" onClick={(e) => this.handleClick10(document.getElementById("66").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="67" class="gameR game-bottomR " onClick={(e) => this.handleClick10(document.getElementById("67").innerHTML)}> <span>57</span></li>
+    <li id="67" class="gameR game-bottomR " onClick={(e) => this.handleClick10(document.getElementById("67").innerHTML)}> </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="68" class="gameR game-topR " onClick={(e) => this.handleClick11(document.getElementById("68").innerHTML)}> <span>48</span></li>
+    <li id="68" class="gameR game-topR " onClick={(e) => this.handleClick11(document.getElementById("68").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="69" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick11(document.getElementById("69").innerHTML)}> <span>70</span></li>
+    <li id="69" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick11(document.getElementById("69").innerHTML)}> </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="70" class="gameR game-topR " onClick={(e) => this.handleClick12(document.getElementById("70").innerHTML)}> <span>50</span></li>
+    <li id="70" class="gameR game-topR " onClick={(e) => this.handleClick12(document.getElementById("70").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="71" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick12(document.getElementById("71").innerHTML)}> <span>66</span></li>
+    <li id="71" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick12(document.getElementById("71").innerHTML)}> </li>
 
     <li class="spacerR">&nbsp;</li>
   </ul>
   <ul class="roundR round-3">
     <li class="spacerR">&nbsp;</li>
     
-    <li id="96" class="gameR game-topR winnerR" onClick={(e) => this.handleClick13(document.getElementById("96").innerHTML)}> <span>77</span></li>
+    <li id="96" class="gameR game-topR winnerR" onClick={(e) => this.handleClick13(document.getElementById("96").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="97" class="gameR game-bottomR " onClick={(e) => this.handleClick13(document.getElementById("97").innerHTML)}> <span>69</span></li>
+    <li id="97" class="gameR game-bottomR " onClick={(e) => this.handleClick13(document.getElementById("97").innerHTML)}> </li>
 
     <li class="spacerR">&nbsp;</li>
     
-    <li id="98" class="gameR game-topR " onClick={(e) => this.handleClick14(document.getElementById("98").innerHTML)}> <span>61</span></li>
+    <li id="98" class="gameR game-topR " onClick={(e) => this.handleClick14(document.getElementById("98").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="99" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick14(document.getElementById("99").innerHTML)}> <span>71</span></li>
+    <li id="99" class="gameR game-bottomR winnerR" onClick={(e) => this.handleClick14(document.getElementById("99").innerHTML)}> </li>
 
     <li class="spacerR">&nbsp;</li>
   </ul>
   <ul class="roundR round-4">
     <li class="spacerR">&nbsp;</li>
     
-    <li id="112" class="gameR game-topR winnerR" onClick={(e) => this.handleClick15(document.getElementById("112").innerHTML)}> <span>85</span></li>
+    <li id="112" class="gameR game-topR winnerR" onClick={(e) => this.handleClick15(document.getElementById("112").innerHTML)}> </li>
     <li class="gameR game-spacerR">&nbsp;</li>
-    <li id="113" class="gameR game-bottomR " onClick={(e) => this.handleClick15(document.getElementById("113").innerHTML)}> <span>63</span></li>
+    <li id="113" class="gameR game-bottomR " onClick={(e) => this.handleClick15(document.getElementById("113").innerHTML)}> </li>
     
     <li class="spacerR">&nbsp;</li>
   </ul>   
   <ul class="roundL round-5">
 		
 		
-    <li id="202" class="gameL game-topL winnerL"> <span>85</span></li>
+    <li id="202" class="gameL game-topL winnerL"> </li>
 		
   </ul>		
 </main>

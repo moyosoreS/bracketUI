@@ -26,7 +26,7 @@ class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'a',
+      value: 'Dashboard',
     };
   }
 
