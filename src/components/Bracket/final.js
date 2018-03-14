@@ -6,15 +6,21 @@ class Final extends Component {
      document.getElementById("304").innerHTML = e;
      
      console.log(e);}
+
      handleClick2 = (e) => {
      document.getElementById("305").innerHTML = e;
      
      console.log(e);}
 
+     submit = (e) => {
+
+     }
+
     constructor(props) {
     super(props);
     this.state = {
       current: 'current',
+      
     };
   }
 
@@ -61,7 +67,7 @@ class Final extends Component {
 
 <main id="tournament" class="left">
   <ul class="roundL round-3">
-	<button id="submit"> Submit Bracket </button>
+	<button id="submit" onClick={(e) => this.submit()}> Submit Bracket </button>
 		
 	</ul>
 </main>

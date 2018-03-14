@@ -31,20 +31,20 @@ class App extends Component {
       <HashRouter>
       <div>
         <div>
-        <Route path="/login" component={Login} />
+        <Route exact path="/login" component={Login} />
         </div>
         <div>
-        <Route path="/register" component={Register} />
+        <Route exact path="/register" component={Register} />
         </div>
         <div>
 	{renderIf(this.state.loggedIn===true)(
-        <Route path="/dashboard" component={Dashboard} /> )}
+        <Route exact path="/dashboard" component={Dashboard} /> )}
         </div>
         <div>
-        <Route path="/" component={Login} />
+        <Route exact path="/" component={Login} />
         </div>
        <div>
-        <Route path="/" component={Register} />
+        <Route exact path="/" component={Register} />
         </div>
       </div>
       </HashRouter>

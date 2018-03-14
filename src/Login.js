@@ -48,7 +48,7 @@ handleClick(event){
  		console.log("Login successfull");
 	self.setState({toDashboard: true});
         self.props.loggedIn(true);
- 
+        alert("Successfully Logged In!!");
  }
 
  else if(response.data.code == 204){
