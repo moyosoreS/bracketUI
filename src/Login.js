@@ -11,6 +11,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 
+import App from './App.js';
 
 
 "use strict";
@@ -39,13 +40,14 @@ handleClick(event){
     "email":this.state.email,
     "password":this.state.password
     }
-
+ 
   axios.get(apiBaseUrl)
  .then(function (response) {
  		console.log(response);
  	if(response.data.code == 200){
  		console.log("Login successfull");
 	self.setState({toDashboard: true});
+        self.props.loggedIn(true);
  
  }
 

@@ -12,14 +12,27 @@ import Login from './Login.js';
 import Dashboard from './components/dashboard.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loggedIn: true,
+    };
+  }
+
+  onUpdate = (val) => {
+    this.setState({
+      loggedIn: val
+    })
+  };
+
   render() {
     return (
-
       <HashRouter>
         <div>
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
-        <Route path="/dashboard" component={Dashboard} />
+	{renderIf(this.state.loggedIn===true)(
+        <Route path="/dashboard" component={Dashboard} /> )}
       </div>
       </HashRouter>
 
