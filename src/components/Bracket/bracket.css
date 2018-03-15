@@ -139,10 +139,10 @@ body {
     padding: 10px;
     line-height: 1.4em;
     background: url(court.png);
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    height: 100%;
+    background-attachment: fixed;
     /*color: white;*/
 }
 
@@ -180,9 +180,10 @@ li.game-bottomR {
 }
 
 .Final {
-    background-color: black;
+    background-color: white;
     opacity: .9;
     margin-top: 50px;
+    border-radius: 25px;
 }
 
 #llSection,
@@ -190,8 +191,34 @@ li.game-bottomR {
 #urSection,
 #ulSection {
     background-color: white;
-    opacity: .9;
+    opacity: .85;
     margin-top: 50px;
     padding: 5%;
     border-radius: 25px;
+}
+
+#llSection,
+#lrSection {
+    margin-top: 100px;
+}
+
+#submit {
+    background-color: #FFA500;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    width: 300px;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border: white solid 2px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: white;
+    color: #b43b08;
+}
+
+#submitArea {
+    margin-left: 42%;
 }

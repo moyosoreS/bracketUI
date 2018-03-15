@@ -54,11 +54,8 @@ class Final extends Component {
 		
 	<li class="spacerL">&nbsp;</li>
 	</ul>	
-	<ul class="roundL round-5">
-		
-		
+	<ul class="roundL round-5">	
 	<li id="305" class="gameL game-topL winnerL"> </li>
-		
 	</ul>
 </main>
       </div>
@@ -66,8 +63,8 @@ class Final extends Component {
 
 
 <main id="tournament" class="left">
-  <ul class="roundL round-3">
-	<button id="submit" onClick={(e) => this.submit()}> Submit Bracket </button>
+  <ul class="roundL round-3" id="submitArea">
+	<button id="submit" onClick={(e) => this.submit()}> SUBMIT BRACKET </button>
 		
 	</ul>
 </main>
