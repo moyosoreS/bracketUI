@@ -86,16 +86,16 @@ li.gameL span.left {
 }
 
 li.game-topL {
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 li.game-spacerL {
-    border-right: 1px solid #000;
+    border-right: 2px solid #000;
     min-height: 40px;
 }
 
 li.game-bottomL {
-    border-top: 1px solid #000;
+    border-top: 2px solid #000;
 }
 
 
@@ -139,9 +139,10 @@ body {
     padding: 10px;
     line-height: 1.4em;
     background: url(court.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    /*color: white;*/
 }
 
 li.gameR {
@@ -158,16 +159,16 @@ li.gameR span.right {
 }
 
 li.game-topR {
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 li.game-spacerR {
-    border-left: 1px solid #000;
+    border-left: 2px solid #000;
     min-height: 40px;
 }
 
 li.game-bottomR {
-    border-top: 1px solid #000;
+    border-top: 2px solid #000;
 }
 
 
@@ -175,4 +176,34 @@ li.game-bottomR {
 
 #finalRound2 {
     margin-left: 50%;
+}
+
+.Final {
+    background-color: black;
+    opacity: .9;
+    margin-top: 50px;
+}
+
+#llSection {
+    background-color: white;
+    opacity: .9;
+    margin-top: 50px;
+}
+
+#lrSection {
+    background-color: white;
+    opacity: .9;
+    margin-top: 50px;
+}
+
+#urSection {
+    background-color: white;
+    opacity: .9;
+    margin-top: 50px;
+}
+
+#ulSection {
+    background-color: white;
+    opacity: .9;
+    margin-top: 50px;
 }
