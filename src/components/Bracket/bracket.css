@@ -142,6 +142,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     /*color: white;*/
 }
 
@@ -184,26 +185,13 @@ li.game-bottomR {
     margin-top: 50px;
 }
 
-#llSection {
-    background-color: white;
-    opacity: .9;
-    margin-top: 50px;
-}
-
-#lrSection {
-    background-color: white;
-    opacity: .9;
-    margin-top: 50px;
-}
-
-#urSection {
-    background-color: white;
-    opacity: .9;
-    margin-top: 50px;
-}
-
+#llSection,
+#lrSection,
+#urSection,
 #ulSection {
     background-color: white;
     opacity: .9;
     margin-top: 50px;
+    padding: 5%;
+    border-radius: 25px;
 }
