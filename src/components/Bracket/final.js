@@ -28,7 +28,7 @@ class Final extends Component {
     return (
       <div>
       <div >
-<main id="tournament" class="left" style={{marginLeft: 0, marginRight:0}}>
+<main id="tournament" class="left" style={{marginLeft: 0, marginRight:0, padding: '5%'}}>
   <ul class="roundL round-1">
 	<li class="spacerL">&nbsp;</li>
 		
@@ -44,11 +44,8 @@ class Final extends Component {
 	<li id="304" class="gameL game-topL winnerL"> </li>
 		
 	</ul>			
-</main>
-      </div>
-      <div>
-<main id="tournament" class="left">
-  <ul class="roundL round-2">
+
+    <ul class="roundL round-2" id="finalRound2">
 	<li class="spacerL">&nbsp;</li>
 		
 	<li id="302" class="gameL game-topL winnerL" onClick={(e) => this.handleClick2(document.getElementById("302").innerHTML)}> </li>
@@ -64,6 +61,9 @@ class Final extends Component {
 		
 	</ul>
 </main>
+      </div>
+      <div>
+
 
 <main id="tournament" class="left">
   <ul class="roundL round-3">

@@ -2,145 +2,177 @@
  *  Flex Layout Specifics
 */
 
-
 .topRow {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .bottomRow {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .Final {
-  display: flex;
-  height: 200px;
-  width:  1000px;
-  background-color: red;
-  margin: 0 auto;
+    display: flex;
+    height: 200px;
+    width: 1000px;
+    background-color: red;
+    margin: 0 auto;
 }
 
 .upperFinal {
-  height: 400px;
-  width:  400px;
+    height: 400px;
+    width: 400px;
 }
 
 .lowerFinal {
-  height: 400px;
-  width:  400px;
+    height: 400px;
+    width: 400px;
 }
 
 
-/* LEFT SIDE */ 
+/* LEFT SIDE */
 
-main.left{
-  display:flex;
-  flex-direction:row;
+main.left {
+    display: flex;
+    flex-direction: row;
 }
-.roundL{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  width:150px;
-  list-style:none;
-  padding:0;
-}
-  .roundL .spacerL{ flex-grow:1; }
-  .roundL .spacerL:first-child,
-  .roundL .spacerL:last-child{ flex-grow:.5; }
 
-  .roundL .game-spacerL{
-    flex-grow:1;
-  }
+.roundL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+}
+
+.roundL .spacerL {
+    flex-grow: 1;
+}
+
+.roundL .spacerL:first-child,
+.roundL .spacerL:last-child {
+    flex-grow: .5;
+}
+
+.roundL .game-spacerL {
+    flex-grow: 1;
+}
+
 
 /*
  *  General Styles
 */
-body{
-  font-family:sans-serif;
-  font-size:small;
-  padding:10px;
-  line-height:1.4em;
+
+body {
+    font-family: sans-serif;
+    font-size: small;
+    padding: 10px;
+    line-height: 1.4em;
 }
 
-li.gameL{
-  padding-left:20px;
+li.gameL {
+    padding-left: 20px;
 }
 
-  li.game.winnerL{
-    font-weight:bold;
-  }
-  li.gameL span.left{
-    float:right;
-    margin-right:5px;
-  }
-
-  li.game-topL{ border-bottom:1px solid #aaa; }
-
-  li.game-spacerL{ 
-    border-right:1px solid #aaa;
-    min-height:40px;
-  }
-
-  li.game-bottomL{ 
-    border-top:1px solid #aaa;
-  }
-
-
-
-  /* RIGHT SIDE */
-
-
-main.right{
-  display:flex;
-  flex-direction:row-reverse;
+li.game.winnerL {
+    font-weight: bold;
 }
-.roundR{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  width:150px;
-  list-style:none;
-  padding:0;
-}
-  .roundR .spacerR{ flex-grow:1; }
-  .roundR .spacerR:first-child,
-  .roundR .spacerR:last-child{ flex-grow:.5; }
 
-  .roundR .game-spacerR{
-    flex-grow:1;
-  }
+li.gameL span.left {
+    float: right;
+    margin-right: 5px;
+}
+
+li.game-topL {
+    border-bottom: 1px solid #000;
+}
+
+li.game-spacerL {
+    border-right: 1px solid #000;
+    min-height: 40px;
+}
+
+li.game-bottomL {
+    border-top: 1px solid #000;
+}
+
+
+/* RIGHT SIDE */
+
+main.right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.roundR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+}
+
+.roundR .spacerR {
+    flex-grow: 1;
+}
+
+.roundR .spacerR:first-child,
+.roundR .spacerR:last-child {
+    flex-grow: .5;
+}
+
+.roundR .game-spacerR {
+    flex-grow: 1;
+}
+
 
 /*
  *  General Styles
 */
-body{
-  font-family:sans-serif;
-  font-size:small;
-  padding:10px;
-  line-height:1.4em;
+
+body {
+    font-family: sans-serif;
+    font-size: small;
+    padding: 10px;
+    line-height: 1.4em;
+    background: url(court.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-li.gameR{
-  padding-left:20px;
+li.gameR {
+    padding-left: 20px;
 }
 
-  li.game.winnerR{
-    font-weight:bold;
-  }
-  li.gameR span.right{
-    float:right;
-    margin-right:5px;
-  }
+li.game.winnerR {
+    font-weight: bold;
+}
 
-  li.game-topR{ border-bottom:1px solid #aaa; }
+li.gameR span.right {
+    float: right;
+    margin-right: 5px;
+}
 
-  li.game-spacerR{ 
-    border-left:1px solid #aaa;
-    min-height:40px;
-  }
+li.game-topR {
+    border-bottom: 1px solid #000;
+}
 
-  li.game-bottomR{ 
-    border-top:1px solid #aaa;
-  }
+li.game-spacerR {
+    border-left: 1px solid #000;
+    min-height: 40px;
+}
+
+li.game-bottomR {
+    border-top: 1px solid #000;
+}
+
+
+/* UI stylings */
+
+#finalRound2 {
+    margin-left: 50%;
+}
