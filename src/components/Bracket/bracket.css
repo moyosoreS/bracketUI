@@ -240,3 +240,7 @@ h2 {
     border-left: 2px solid #000;
     border-right: none !important;
 }
+
+#test {
+    margin-right: 30px;
+}
