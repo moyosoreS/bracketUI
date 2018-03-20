@@ -4,9 +4,9 @@ var app = express();
 
 var bodyParser = require('body-parser');
 
-var oracledb = require('oracledb');
+// var oracledb = require('oracledb');
 
-oracledb.autoCommit = true;
+// oracledb.autoCommit = true;
 
 app.use(bodyParser.json());
 
@@ -24,95 +24,95 @@ var connAttrs = {
 
 app.get('/login', function (req, res) {
 
-   "use strict";    oracledb.getConnection(connAttrs, function (err, connection) {
+//    "use strict";    oracledb.getConnection(connAttrs, function (err, connection) {
 
-       if (err) {
+//        if (err) {
 
-           // Error connecting to DB
+//            // Error connecting to DB
 
-           res.set('Content-Type', 'application/json');
+//            res.set('Content-Type', 'application/json');
 
-           res.status(500).send(JSON.stringify({
+//            res.status(500).send(JSON.stringify({
 
-               status: 500,
+//                status: 500,
 
-               message: "Error connecting to DB",
+//                message: "Error connecting to DB",
 
-               detailed_message: err.message
+//                detailed_message: err.message
 
-           }))
+//            }))
 
-}
+// }
 
-    else
+//     else
 
-    console.log('Successfully connected to Oracle Database');
-    var users={ 
-                "EMAIL":req.body.email,
-                "PASSWORD":req.body.password,
+//     console.log('Successfully connected to Oracle Database');
+//     var users={ 
+//                 "EMAIL":req.body.email,
+//                 "PASSWORD":req.body.password,
 
-          }
+//           }
 
-    connection.execute("SELECT email, password FROM USERS WHERE EMAIL = " +"'"+req.body.email +"'"+" and "+ "password =" +"'"+req.body.password+"'" , function (error, results, fields) {
-                 if (error) {
-                             console.log("User not Found. Please try again!",error);
-                             res.send({ "code":400,"failed":"error ocurred" })
-                }
-                else{       console.log('The solution is: ', results);
-			                      console.log('The fields are: ', fields);
-                            res.send({"code":200,"success":"User sucessfully loggedIn!"}); 
-			    connection.release();
+//     connection.execute("SELECT email, password FROM USERS WHERE EMAIL = " +"'"+req.body.email +"'"+" and "+ "password =" +"'"+req.body.password+"'" , function (error, results, fields) {
+//                  if (error) {
+//                              console.log("User not Found. Please try again!",error);
+//                              res.send({ "code":400,"failed":"error ocurred" })
+//                 }
+//                 else{       console.log('The solution is: ', results);
+// 			                      console.log('The fields are: ', fields);
+//                             res.send({"code":200,"success":"User sucessfully loggedIn!"}); 
+// 			    connection.release();
      			    
-}
-})
+// }
+// })
 
-})
+// })
 });
 
 app.post('/register', function (req, res) 
 
 {   "use strict";    
 
-oracledb.getConnection(connAttrs, function (err, connection) {       
+// oracledb.getConnection(connAttrs, function (err, connection) {       
 
-if (err) {           // Error connecting to DB           
-res.set('Content-Type', 'application/json');           
-res.status(500).send(JSON.stringify({status: 500,message: "Error connecting to DB",detailed_message: err.message}))}    
-else    
-console.log('Successfully connected to Oracle Database');
+// if (err) {           // Error connecting to DB           
+// res.set('Content-Type', 'application/json');           
+// res.status(500).send(JSON.stringify({status: 500,message: "Error connecting to DB",detailed_message: err.message}))}    
+// else    
+// console.log('Successfully connected to Oracle Database');
 
-var users={ "ID":req.body.id,
+// var users={ "ID":req.body.id,
 
-            "FIRSTNAME":req.body.first_name,
+//             "FIRSTNAME":req.body.first_name,
 
-               "LASTNAME":req.body.last_name,
+//                "LASTNAME":req.body.last_name,
 
-               "EMAIL":req.body.email,
+//                "EMAIL":req.body.email,
 
-               "PASSWORD":req.body.password,}   
+//                "PASSWORD":req.body.password,}   
 
-connection.execute("INSERT INTO USERS (ID,FIRSTNAME,LASTNAME,EMAIL, PASSWORD) VALUES ("+"'" + req.body.id +"'" + ','+"'" + req.body.first_name +"'" +','+"'"+ req.body.last_name +"'" + ','+"'"+ req.body.email +"'" + ',' +"'"+ req.body.password+"'" + ")", function (error, results, fields) {
+// connection.execute("INSERT INTO USERS (ID,FIRSTNAME,LASTNAME,EMAIL, PASSWORD) VALUES ("+"'" + req.body.id +"'" + ','+"'" + req.body.first_name +"'" +','+"'"+ req.body.last_name +"'" + ','+"'"+ req.body.email +"'" + ',' +"'"+ req.body.password+"'" + ")", function (error, results, fields) {
 
-                if (error) {
+//                 if (error) {
 
-                            console.log("error ocurred",error);
+//                             console.log("error ocurred",error);
 
-                            res.send({ "code":400,"failed":"error ocurred" })
+//                             res.send({ "code":400,"failed":"error ocurred" })
 
-               }
+//                }
 
-               else{       console.log('The solution is: ', results);
+//                else{       console.log('The solution is: ', results);
 
-                console.log('The fields are: ', fields);
+//                 console.log('The fields are: ', fields);
 
-                   res.send({"code":200,"success":"user registered sucessfully"});
-                   connection.release();
+//                    res.send({"code":200,"success":"user registered sucessfully"});
+//                    connection.release();
 
                     
 
-}
+// }
 
-})})
+// })})
 
 });
 

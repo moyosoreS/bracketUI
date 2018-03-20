@@ -15,7 +15,7 @@ import App from './App.js';
 
 
 "use strict";
-var oracledb = require('/home/moyo/screen/node_modules/oracledb/build/Release/oracledb.node');
+//var oracledb = require('/home/moyo/screen/node_modules/oracledb/build/Release/oracledb.node');
 //var oracledb = require('oracledb');
 
 class Login extends Component {

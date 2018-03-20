@@ -128,7 +128,7 @@ render() {
       return (
         <div>
 
-<main id="tournament" class="right">
+<main id="tournament" class="right" id="lrSection">
   <ul class="roundR round-1">
     <li class="spacerR">&nbsp;</li>
     
